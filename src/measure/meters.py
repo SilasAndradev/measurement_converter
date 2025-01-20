@@ -6,8 +6,6 @@ class meters:
         self.value_left = float(list_left[1])
         
         self.type_right = list_right
-        print(self.value_left)
-        print(self.type_right)
 
         if self.type_left == "Kilometer":
             self.Kilometer()
@@ -53,13 +51,13 @@ class meters:
             messagebox.showinfo("Result", f"Result is {self.value_left}")
 
         elif self.type_right == "Centimeter":
-            messagebox.showinfo("Result", f"Result is {self.value_left / 100}")
+            messagebox.showinfo("Result", f"Result is {self.value_left * 100}")
 
         elif self.type_right == "Millimeter":
-            messagebox.showinfo("Result", f"Result is {self.value_left / 1000}")
+            messagebox.showinfo("Result", f"Result is {self.value_left * 1000}")
 
         elif self.type_right == "Decimeter":
-            messagebox.showinfo("Result", f"Result is {self.value_left / 10}")
+            messagebox.showinfo("Result", f"Result is {self.value_left * 10}")
 
         else:
             messagebox.showerror("ERROR", "Anything is error")

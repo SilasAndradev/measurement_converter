@@ -6,7 +6,7 @@ class APP:
     def __init__(self):
         self.master = Tk()
         self.master.iconbitmap("assets/icon.ico")
-        self.master.geometry("800x600")
+        self.master.geometry("600x400")
         self.master.title("Measurement Converter")
 
         self.color_background = "#363f4e"
@@ -38,7 +38,7 @@ class APP:
         self.clicked_right.set(self.option[0])
 
         self.entry_left = Entry(self.frame_master, font=(0,10))
-        self.entry_left.place(relx=0.4, rely=0.5, anchor=CENTER, relheight=0.05)
+        self.entry_left.place(relx=0.5, rely=0.5, anchor=CENTER, relheight=0.05)
 
 
         self.dropdown_left = OptionMenu(self.frame_master, self.clicked_left, *self.option)
