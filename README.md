@@ -14,9 +14,9 @@
 
 The project is still under development and the next updates will focus on the following tasks:
 
-- [ ] Make the interface
-- [ ] Add the buttons
-- [ ] Add centimeter to meter
+- [x] Make the interface
+- [x] Add the buttons
+- [x] Add centimeter to meter
 - [ ] Add other units of measurement
 
 ## 💻 Prerequisites
