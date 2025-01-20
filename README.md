@@ -6,7 +6,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/SilasAndradev/measurement_converter?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/SilasAndradev/measurement_converter?style=for-the-badge)
 
-<img src="example.png" alt="Example">
+<img src=![](example.png) alt="Example">
 
 > The measurement converter is a program that performs conversion into different units of measurement
 
