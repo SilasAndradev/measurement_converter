@@ -1,11 +1,14 @@
 from tkinter import *
 from tkinter import ttk
+import os
 from measure.meters import meters
 
 class APP:
     def __init__(self):
         self.master = Tk()
-        self.master.iconbitmap("assets/icon.ico")
+        self.BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        self.icon_path = os.path.join(self.BASE_DIR, 'assets', 'icon.ico')
+        self.master.iconbitmap(self.icon_path)
         self.master.geometry("600x400")
         self.master.title("Measurement Converter")
 
