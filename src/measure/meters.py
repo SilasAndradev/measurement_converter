@@ -3,9 +3,12 @@ from tkinter import messagebox
 class meters:
     def main(self, list_left, list_right):
         self.type_left = list_left[0]
-        self.value_left = float(list_left[1])
-        
-        self.type_right = list_right
+        try:
+            self.value_left = float(list_left[1])
+        except Exception as e:
+            messagebox.showerror("ERROR!", "Enter a number!")
+
+        self.type_right = list_right[0]
 
         if self.type_left == "Kilometer":
             self.Kilometer()
@@ -14,7 +17,7 @@ class meters:
             self.Meter()
 
         elif self.type_left == "Centimeter":
-            self.Meter()
+            self.Centimeter()
 
         elif self.type_left == "Millimeter":
             self.Millimeter()
@@ -64,7 +67,7 @@ class meters:
 
     def Centimeter(self):
         if self.type_right == "Kilometer":
-            messagebox.showinfo("Result", f"Result is {self.value_left / 1000 / 100}")
+            messagebox.showinfo("Result", f"Result is {self.value_left / 100000}")
 
         elif self.type_right == "Meter":
             messagebox.showinfo("Result", f"Result is {self.value_left / 100}")

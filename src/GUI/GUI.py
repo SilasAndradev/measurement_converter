@@ -1,7 +1,7 @@
 from tkinter import *
-from tkinter import ttk
 import os
 from measure.meters import meters
+
 
 class APP:
     def __init__(self):
@@ -54,7 +54,7 @@ class APP:
         font=('Helvetica', 20, 'bold'), foreground='black', command=self.value_to_list).place(relx=0.5, rely=0.7, anchor=CENTER)
 
     def value_to_list(self):
-        self.list_left = (self.clicked_left.get(), self.entry_left.get())
-        self.list_right = (self.clicked_right.get())
+        self.list_left = [self.clicked_left.get(), self.entry_left.get()]
+        self.list_right = [self.clicked_right.get()]
 
         meters().main(self.list_left, self.list_right)
